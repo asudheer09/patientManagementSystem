@@ -21,5 +21,15 @@ public class PatientService {
         return repository.findById(id).get();
     }
 
+    public void savePatient(Patient patient){
+        repository.save(patient);
+    }
+
+    public void deletePatientById(Long id){
+        repository.deleteById(id);
+    }
+
+
+
 
 }
